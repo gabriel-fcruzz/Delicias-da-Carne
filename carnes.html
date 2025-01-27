@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição breve do seu site">
+    <meta name="keywords" content="Carnes, Carnes Premium, Picanha, Fraldinha, Filé Mignon, Costela de Porco">
+    <meta name="author" content="Seu Nome">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="Portuguese">
+    <meta name="coverage" content="Brazil">
+    <title>Delícias da Carne - Carnes Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1daaae0433.js" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+  <header>
+    <img src="LogoDeliciasdaCarne.png" alt="Logo Site">
+    <h1>Delícias da Carne - Carnes Premium</h1>
+    <div class="search-bar">
+      <input id="inputPesquisa" type="text" placeholder="Oque você está procurando? ">
+      <button onclick="pesquisar()">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        pesquisar
+      </button>
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="carnes.html">Carnes</a>
+    <a href="#" onclick="carrinho()">Carrinho</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+  <main>
+    <h2 id="destaques">Destaques</h2>
+    <section class="produtos-section">
+      <div class="produtos">
+        <h3>Picanha Seleção Raças Britânicas</h3>
+        <img src="carnes/Picanha_innaturaV2_590x.webp" alt="Picanha" class="imgProdutos">
+        <p>Picanha peso: 1,250 kg congelada. </p>
+        <p>Preço: R$XX,XX</p>
+        <button onclick="adicionarAoCarrinho('picanha', 99.99)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produtos">
+        <h3>Fraldinha Extra Limpa Seleção Raças Britânicas</h3>
+        <img src="carnes/Fraldinha-extralimpa_innaturaV2_590x.webp" alt="Picanha" class="imgProdutos">
+        <p>Picanha peso: 1,250 kg congelada. </p>
+        <p>Preço: R$XX,XX</p>
+        <button onclick="adicionarAoCarrinho('picanha', 99.99)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produtos">
+        <h3>Filé Mignon p/ Strogonoff</h3>
+        <img src="carnes/FileMignon_Strogonoff_v2_590x.webp" alt="Picanha" class="imgProdutos">
+        <p>Picanha peso: 1,250 kg congelada. </p>
+        <p>Preço: R$XX,XX</p>
+        <button onclick="adicionarAoCarrinho('picanha', 99.99)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produtos">
+        <h3>Costela de Porco</h3>
+        <img src="carnes/CosteladePorco_v3_590x_07ca0b09-f5e9-433d-8c4b-b875cf08e8ef_590x.webp" alt="Picanha"
+          class="imgProdutos">
+        <p>Picanha peso: 1,250 kg congelada. </p>
+        <p>Preço: R$XX,XX</p>
+        <button onclick="adicionarAoCarrinho('picanha', 99.99)">Adicionar ao Carrinho</button>
+      </div>
+    </section>
+    <h2 id="produtosTitulo">Produtos</h2>
+    <section class="produtos-section">
+      <div class="produtos">
+        <h3>Carne Moída</h3>
+        <img src="carnes/AF_Pratica_CarneMoida-min_370x.webp" alt="Imagem carne moída" class="imgProdutos">
+        <p>Peso: X,XXX kg congelada. </p>
+        <p>Preço: R$99,99</p>
+        <button onclick="adicionarAoCarrinho('Carne moída', 99.99)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produtos">
+        <h3>Carpaccio</h3>
+        <img src="carnes/AF_Pratica_Carpaccio_370x.webp" alt="Imagem Carpaccio" class="imgProdutos">
+        <p>Peso: X,XXX kg congelada. </p>
+        <p>Preço: R$99,99</p>
+        <button onclick="adicionarAoCarrinho('Carpaccio', 99.99)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produtos">
+        <h3>Assado de tira</h3>
+        <img src="carnes/assadodetira_fundo_590x.webp" alt="Imagem Assado de tira" class="imgProdutos">
+        <p>Peso: X,XXX kg congelada. </p>
+        <p>Preço: R$99,99</p>
+        <button onclick="adicionarAoCarrinho('Assado de tira', 99.99)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produtos">
+        <h3>BabyBeef</h3>
+        <img src="carnes/BabyBeef_innaturaV3_590x.webp" alt="Imagem BabyBeef" class="imgProdutos">
+        <p>Peso: X,XXX kg congelada. </p>
+        <p>Preço: R$99,99</p>
+        <button onclick="adicionarAoCarrinho('BabyBeef', 99.99)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produtos">
+        <h3>Bife Ancho Orgânico</h3>
+        <img src="carnes/BifeAncho_innatura_v2_590x.webp" alt="Imagem Bife Ancho" class="imgProdutos">
+        <p>Peso: X,XXX kg congelada. </p>
+        <p>Preço: R$99,99</p>
+        <button onclick="adicionarAoCarrinho('Bife Ancho', 99.99)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produtos">
+        <h3>Bife Chorizo Orgânico</h3>
+        <img src="carnes/BifedeChorizo_innatura_590x.webp" alt="Imagem Bife Chorizo Orgânico" class="imgProdutos">
+        <p>Peso: X,XXX kg congelada. </p>
+        <p>Preço: R$99,99</p>
+        <button onclick="adicionarAoCarrinho('Bife Chorizo Orgânico', 99.99)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produtos">
+        <h3>Bife Chorizo</h3>
+        <img src="carnes/BifedeChorizo_innaturaV2_590x.webp" alt="Imagem Bife Chorizo" class="imgProdutos">
+        <p>Peso: X,XXX kg congelada. </p>
+        <p>Preço: R$99,99</p>
+        <button onclick="adicionarAoCarrinho('Bife Chorizo', 99.99)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produtos">
+        <h3>Bom Bom de Alcatra Seleção Raças Britânicas</h3>
+        <img src="carnes/BombomdeAlcatra_v2_590x.webp" alt="Imagem Bom Bom de Alcatra Seleção Raças Britânicas"
+          class="imgProdutos">
+        <p>Peso: X,XXX kg congelada. </p>
+        <p>Preço: R$99,99</p>
+        <button onclick="adicionarAoCarrinho('Bom Bom de Alcatra Seleção Raças Britânicas', 99.99)">Adicionar ao
+          Carrinho</button>
+      </div>
+      <div class="produtos">
+        <h3>Carré de Cordeiro</h3>
+        <img src="carnes/carredecordeiro_1_v2_fundo_590x.webp" alt="Imagem Carré de Cordeiro" class="imgProdutos">
+        <p>Peso: X,XXX kg congelada. </p>
+        <p>Preço: R$99,99</p>
+        <button onclick="adicionarAoCarrinho('Carré de Cordeiro', 99.99)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produtos sold-out">
+        <h3>Entrecôte Escalope Orgânico</h3>
+        <img src="carnes/WesselOrganico_EscalopedeEntrecoteV2_590x.webp" alt="Imagem da Carne" class="imgProdutos">
+        <p>Peso: X,XXX kg congelada. </p>
+        <p>Esgotado</p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+      <div class="produtos sold-out">
+        <h3>Bife Ancho seleção Raças Britânicas</h3>
+        <img src="carnes/BifeAncho_innaturaV2_590x.webp" alt="Imagem da Carne" class="imgProdutos">
+        <p>Peso: X,XXX kg congelada. </p>
+        <p>Esgotado</p>
+        <button>Adicionar ao Carrinho</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2023 Delícias da Carne - Carnes Premium. Todos os direitos reservados.
+  </footer>
+
+  <script src="carnes.js"></script>
+</body>
+
+</html>

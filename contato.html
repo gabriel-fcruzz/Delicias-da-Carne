@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descrição breve do seu site">
+  <meta name="keywords" content="Carnes, Carnes Premium, Picanha, Fraldinha, Filé Mignon, Costela de Porco">
+  <meta name="author" content="Seu Nome">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="7 days">
+  <meta name="language" content="Portuguese">
+  <meta name="coverage" content="Brazil">
+  <title>Delícias da Carne - Carnes Premium</title>
+  <link rel="stylesheet" href="contatoStyle.css">
+  <script src="https://kit.fontawesome.com/1daaae0433.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <img src="LogoDeliciasdaCarne.png" alt="Logo Site">
+    <h1>Delícias da Carne - Carnes Premium</h1>
+    <div class="search-bar">
+      <input id="inputPesquisa" type="text" placeholder="Oque você está procurando? ">
+      <button onclick="pesquisar()" id="pesquisar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        pesquisar
+      </button>
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="carnes.html">Carnes</a>
+    <a href="#" onclick="carrinho()">Carrinho</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main id="mainContato">
+
+    <section id="jare">
+      <h2>Temos carne de jácaré!</h2>
+      <img src="images.webp" alt="carne de jacaré">
+      <h3>Sim, isso mesmo que você leu, TEMOS CARNE DE JACARÉ!!!</h3>
+
+    </section>
+
+    <section id="contato">
+      <h2 class="h2Contato">QUEM SOMOS?</h2>
+      <p>
+        Delícias da Carne Exóticas e Cortes Uruguaios e Argentinos.
+        Nós comemos, nós bebemos, nós cozinhamos nós viajamos para descobrir novos sabores nós conversamos sobre novos
+        sabores nós acreditamos que comer é uma das grandes maravilhas da vida. </p>
+
+      <h3>Delícias da Carne.</h3>
+
+      <p>Há quarenta anos comercializando produtos de qualidade. Cortes uruguaios, argentinos, filé de peixes. Haddock
+        escocês, vieiras importadadas, tentáculos. </p>
+
+      <h3>O MELHOR RESTAURANTE É A NOSSA CASA.</h3>
+
+      <p> Delícias da Carne, sempre entregando qualidade aos clientes. </p>
+
+      <h2 class="h2Contato" id="h2Contato">Entre em contato!</h2>
+      <form action="#" method="post" class="formulário">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <section id="avestruz">
+      <h2>Temos carne de avestruz!</h2>
+      <img src="images (1)_jpgavestruz 2.webp" alt="carne de avestruz">
+      <h3>De avestruz também?? SIM, DE AVESTRUZ TAMBÉM O DONO FICOU LOUCO!!!</h3>
+    </section>
+  </main>
+  <footer>
+    <section id="sectionFooter">
+      <div class="divFooter produtos">
+      <span class="spanFooter">Produtos</span>
+      
+      <ul class="ulFooter">
+        <li class="liFooter"><a href="carnes.html">Bovinas</a></li>
+        <li class="liFooter"><a href="#">Suínas</a></li>
+        <li class="liFooter"><a href="#">Aves</a></li>
+        <li class="liFooter"><a href="#">Peixes</a></li>
+      </ul>
+      </div>
+      <iframe id="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.879719383118!2d-43.19646642374207!3d-22.954656439585452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe09f122171%3A0xcb6578915f0cf2be!2sR.%20Volunt%C3%A1rios%20da%20P%C3%A1tria%2C%20340%20-%20f%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022270-016!5e0!3m2!1spt-BR!2sbr!4v1702418668805!5m2!1spt-BR!2sbr"
+        width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="divFooter contatos">
+      <span class="spanFooter">Contatos</span>
+      <ul class="ulFooter">
+        <li class="liFooter">(21) 2527-7125</li>
+        <li class="liFooter">(21) 9721-3094</li>
+        <li class="liFooter">(21) 9721-3094</li>
+        <li class="liFooter"><a href="#contato"> Contate-nos</a></li>
+      </ul>
+      </div>
+    </section>
+    <section>
+      &copy; 2023 Delícias da Carne - Carnes Premium. Todos os direitos reservados.
+    </section>
+  </footer>
+  <script src="contato.js"></script>
+</body>
+
+</html>

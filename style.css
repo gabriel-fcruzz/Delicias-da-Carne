@@ -1,0 +1,133 @@
+
+
+@font-face {
+    font-family: 'FreeSans';
+    src: url('FreeSans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'FreeSans', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #000;
+    color: #daccb0;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+header h1{
+  width: 100%;
+  margin: 0 0.5em;
+}
+
+header img {
+  margin-left: 1em;
+  max-width: 100%;
+  width: 100px;
+}
+
+.search-bar{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+    opacity: 50%;
+    background-color: unset;
+    padding: 15px;
+    margin-right: 5px;
+    width: 500px;
+    border: 1px solid #daccb0;
+    color: #daccb0;
+}
+
+.search-bar button{
+  padding: 5px;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+nav {
+    border-top: 1px solid rgb(203,160,117,.3);
+    background-color: #000;
+    text-align: center;
+    padding: 0.5em;
+}
+
+nav a {
+    color: #daccb0;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+section {
+    padding: 1em;
+}
+
+footer {
+    background-color: #000;
+    color: #daccb0;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+}
+
+#destaques{
+  text-align: center;
+}
+
+.produtos-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.produtos{
+  width: 360px;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.imgProdutos{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.fa-solid{
+  color: #daccb0;
+  width: 15px;
+}
+
+#produtosTitulo{
+  text-align: center;
+}
+
+.sold-out{
+  opacity: .5;
+}
+
+.carrossel{
+  height: 70vh;
+  width: 100vw;
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  transition: background-image 0.9s ease-in-out, transform 0.9s ease-in-out;
+  position: relative;
+}

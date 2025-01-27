@@ -1,0 +1,212 @@
+
+
+@font-face {
+    font-family: 'FreeSans';
+    src: url('FreeSans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'FreeSans', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #000;
+    color: #daccb0;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+header h1{
+  width: 100%;
+  margin: 0 0.5em;
+}
+
+header img {
+  margin-left: 1em;
+  max-width: 100%;
+  width: 100px;
+}
+
+.search-bar{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+    opacity: 50%;
+    background-color: unset;
+    padding: 15px;
+    margin-right: 5px;
+    width: 500px;
+    border: 1px solid #daccb0;
+    color: #daccb0;
+}
+
+.search-bar button{
+  padding: 5px;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+nav {
+    border-top: 1px solid rgb(203,160,117,.3);
+    background-color: #000;
+    text-align: center;
+    padding: 0.5em;
+}
+
+nav a {
+    color: #daccb0;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+footer {
+    background-color: #000;
+    color: #daccb0;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.fa-solid{
+  color: #daccb0;
+  width: 15px;
+}
+
+.carrossel{
+  height: 70vh;
+  width: 100vw;
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  transition: background-image 0.9s ease-in-out, transform 0.9s ease-in-out;
+  position: relative;
+}
+
+#h2Contato{
+  text-align: center;
+}
+
+#mainContato{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+#mainContato section{
+  width: 50vh;
+}
+
+form {
+  background-color: #f4f4f4;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin: 0.5em 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  resize: none;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#mapa{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2vh;
+}
+
+#pesquisar{
+  color: #000;
+}
+
+#jare{
+  margin: 0 auto;
+}
+
+#avestruz{
+  margin: 0 auto;
+}
+
+#avestruz img{
+  width: 385px;
+  height: 254px;
+}
+
+#sectionFooter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+.divFooter{
+  margin: 0 auto;
+  display: block;
+  justify-content: space-between;
+  max-width: 100%;
+  align-items: center;
+}
+
+.spanFooter{
+  margin-left: 2vw;
+}
+
+.liFooter{
+  list-style: none;
+}
+
+.contatos{
+  margin-right: 4vw;
+}
+
+.produtos{
+  margin-right: 2vw;
+}
+
+a{
+  text-decoration: none;
+  color: #daccb0;
+}
+
+a:hover{
+  text-decoration: underline;
+}
